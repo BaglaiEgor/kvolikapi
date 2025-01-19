@@ -11,7 +11,7 @@ using kvolikapi.db;
 namespace kvolikapi.Migrations
 {
     [DbContext(typeof(ContextDb))]
-    [Migration("20250118001605_123")]
+    [Migration("20250119153850_123")]
     partial class _123
     {
         /// <inheritdoc />
@@ -32,7 +32,7 @@ namespace kvolikapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_User"));
 
-                    b.Property<string>("Discription")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")

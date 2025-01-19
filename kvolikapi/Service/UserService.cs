@@ -43,7 +43,8 @@ namespace kvolikapi.Service
 
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
-            existingUser.Discription = user.Discription;
+            existingUser.Password = user.Password;
+            existingUser.Description = user.Description;
 			existingUser.Role = user.Role;
 
 			await _context.SaveChangesAsync();
