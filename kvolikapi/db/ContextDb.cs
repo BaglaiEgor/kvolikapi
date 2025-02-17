@@ -11,5 +11,7 @@ namespace kvolikapi.db
         }
 
         public DbSet<Users> Users { get; set; }
+        public DbSet<Movies> Movies { get; set; }
+
     }
 }
